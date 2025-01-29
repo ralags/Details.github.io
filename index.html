@@ -1,78 +1,75 @@
-Sure! Here's a simple HTML page that collects basic contact details (name, email, and message) and can be hosted on GitHub:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Details</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #fff;
+            max-width: 600px;
+            margin: 40px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
         }
-        .form-group {
-            margin-bottom: 15px;
+        .contact-container {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
+        .contact-item {
+            margin: 15px 0;
         }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .icon {
+            margin-right: 10px;
+            color: #2c3e50;
         }
-        .form-group textarea {
-            resize: vertical;
-        }
-        .form-group button {
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .form-group button:hover {
-            background-color: #218838;
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Contact Us</h2>
-        <form action="https://example.com/submit" method="post">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+    <div class="contact-container">
+        <h2>Contact Details</h2>
+        
+        <div class="contact-item">
+            <span class="icon">📌</span>
+            <strong>Name:</strong> Raviteja B
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📧</span>
+            <strong>Email:</strong> ralags@gmail.com
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📱</span>
+            <strong>Phone:</strong> +91-7416616675
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">🏠</span>
+            <strong>Address:</strong><br>
+            11/268, Main Bazar,<br>
+            Dharmavaram, AP 515671,<br>
+            India
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">🔗</span>
+            <strong>Social Media:</strong><br>
+            LinkedIn: <a href="https://linkedin.com/in/ralags">linkedin.com/in/ralags</a><br>
+            Twitter: <a href="https://twitter.com/ralags">@ralags</a>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">🌐</span>
+            <strong>Website:</strong> <a href="https://google.com">www.google.com</a>
+        </div>
     </div>
 </body>
 </html>
